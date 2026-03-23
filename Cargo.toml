@@ -1,0 +1,11 @@
+[package]
+name = "expkcalc"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.91.0"
+
+[dependencies]
+pkcore = "0.0.23"
+clap = { version = "4.6", features = ["derive", "unicode"] }
+rusqlite = { version = "0.34", features = ["bundled"] } # 0.35 breaks HUPResult https://github.com/rusqlite/rusqlite/releases#reactions--reaction_button_component-a0702b
+env_logger = "0.11.9"
