@@ -43,7 +43,7 @@ jobs:
         with:
           toolchain: stable
           components: clippy, rust-src
-      - run: cargo clippy 
+      - run: cargo clippy
 
   fmt:
     name: Fmt

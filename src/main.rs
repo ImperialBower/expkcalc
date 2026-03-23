@@ -134,14 +134,13 @@ fn main() -> Result<(), PKError> {
         println!("{}", game.board.flop.evals());
     }
 
+    println!();
+    println!();
     game.turn_display_odds()?;
 
-    // too slow
-    // if args.nuts {
-    //     game.display_evals_at_turn();
-    // }
-
-    game.turn_display_evals();
+    if args.nuts {
+        game.turn_display_evals();
+    }
 
     game.river_display_results();
 
